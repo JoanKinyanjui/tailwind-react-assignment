@@ -1,0 +1,31 @@
+.main-profile-div{
+    display: flex;
+}
+.tabs-menu{
+width: 20%;
+border-radius: 34px;
+height: 90%;
+background: transparent linear-gradient(195deg, var(--unnamed-color-2c65c8) 0%, var(--unnamed-color-702cc8) 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(195deg, #2C65C8 0%, #702CC8 100%) 0% 0% no-repeat padding-box;
+}
+.individual-tabs{
+width: 80% ;
+height: 90%;
+}
+.tab-panel-main{
+    height: 90vh;
+    /* width: 100%; */
+}
+.chats-main-div{
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    width: 20% !important;
+}
+
+@media only screen and (max-width: 920px){
+    
+    .main-profile-div{
+        display: block;
+    }
+}

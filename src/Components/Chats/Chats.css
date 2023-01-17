@@ -1,0 +1,9 @@
+.accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background: #2C65C8 0% 0% no-repeat padding-box;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.bring{
+background-color: transparent;
+border: 1px solid #2C65C8;
+}

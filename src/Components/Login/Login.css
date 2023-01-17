@@ -1,0 +1,49 @@
+.login-main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/public/images/bg.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    
+}
+.login-container{
+    width: 40%!important;
+    height: 65%;
+    border-radius: 34px 34px 34px 34px;
+    box-shadow: 0px 2px 80px #00000029;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+.login-container-one{
+height: 20% !important;
+width: 100% !important;
+background: #F6F6F6 0% 0% no-repeat padding-box;
+}
+.login-container-two{
+    height: 80% !important;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 920px) {
+    .login-container{
+        width: 55% !important;
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .login-container{
+        width: 70% !important;
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 468px) {
+    .login-container{
+        width: 90% !important;
+        height: 50%;
+    }
+}
+

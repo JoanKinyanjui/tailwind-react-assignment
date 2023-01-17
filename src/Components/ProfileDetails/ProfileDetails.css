@@ -1,0 +1,113 @@
+.profile-details-main{
+    display: block;
+    width: 100%;
+    height: 100% !important;
+    /* margin:rem; */
+}
+.profile-details-one{
+    /* width: 50% !important; */
+}
+.profile{
+    display: flex;
+    height: 6vh;
+}
+.profile-img{
+    width: 42px;
+    height: 42px;
+}
+.profile-divider{
+    margin: auto !important;
+}
+.profile-details{
+    display: flex !important;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 78vh;
+}
+.profile-details-one{
+width: 40%;
+}
+.profile-details-two{
+    width: 60%;
+    height: 100%!important;
+}
+.address-image{
+    width: 85%;
+    height: 436px;
+    
+}
+
+.address-list li{
+display: flex;
+}
+.profile-details-image{
+    width:262px ;
+    height: 262px;
+}
+/* Responsiveness */
+@media only screen and (max-width: 920px) {
+    .profile-details-main{
+        height: max-content;
+    }
+    .profile-details-image{
+        width:462px ;
+        height: 262px;
+    }
+    .profile-details{
+        display: block !important;
+    }
+    .profile-details-one{
+        margin: auto;
+    }
+    .profile-details-two{
+        margin: auto;
+    }
+  
+    
+}
+@media only screen and (max-width: 767px) {
+.profile-details-one{
+        width: 90%;
+        margin: auto;
+}
+.profile-details-two{
+            width: 90%;
+            margin: auto;
+ }
+.address-image{
+            width: 80%;
+            height: 336px;
+          
+}      
+}
+@media only screen and (max-width: 767px) {
+    .profile-details{
+            display: block !important;
+        }
+    .profile-details-one{
+            width: 90%;
+            margin: auto;
+    }
+    .profile-details-two{
+                width: 90%;
+                border: 1px solid rgb(15, 34, 15);
+                margin: auto;
+     }
+    .address-image{
+                width: 80%;
+                height: 336px;
+              
+    }      
+    .profile-details-image{
+        width:100px ;
+        height: 100px;
+    }
+    }
+@media only screen and (max-width: 468px) {
+
+.address-image{
+            width: 100%;
+            height: 236px;
+          
+}      
+}

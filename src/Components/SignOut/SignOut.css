@@ -1,0 +1,47 @@
+
+.signout-card{
+border-radius: 34px;
+top: 15%;
+}
+.signout-img{
+    width: 116px;
+    height: 116px;
+    border-radius: 100%;
+}
+.signout-account-options{
+    width: 40px;
+    height: 40px;
+}
+@media only screen and (max-width: 920px) {
+    .signout-card{
+        top:25%;
+        position: relative;
+        width: 50%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .signout-card{
+        top:25%;
+        position: relative;
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .signout-card{
+        top:25%;
+        position: relative;
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .signout-card{
+        top:25%;
+        position: relative;
+        width: 95%;
+        margin: auto;
+    }
+}
