@@ -22,7 +22,7 @@ function ProfileDetails({object}) {
     <div className='py-2 text-l text-xl'>
         <p className='text-gray-700'>{object.name}</p>
         <div className='flex place-content-center'>
-        <div>
+        <div className='text-base lg:text-xl md:text-lg'>
 <ul className='text-gray-500 w-full grid pace-content-start '>
     <li className='py-1 flex justify-end'>Username :</li>
     <li className='py-1 flex justify-end'>email :</li>
@@ -30,7 +30,7 @@ function ProfileDetails({object}) {
     <li  className='py-1 flex justify-end'>Website :</li>
 </ul>
         </div>
-        <div>
+        <div className='text-base lg:text-xl md:text-lg'>
 <ul className='text-gray-700  grid justify-content-end'>
     <li  className='py-1 flex justify-content-start pl-2'>{object.username}</li>
     <li  className='py-1 flex justify-content-start pl-2'>{object.email}</li>
@@ -44,16 +44,16 @@ function ProfileDetails({object}) {
     <div className='py-2'>
         <p className='text-gray-500 py-2  text-xl border-t w-5/6 mx-auto'>Company</p>
     <div className='flex place-content-center '>
-        <div>
-<ul className='text-gray-500  text-xl'>
+        <div className='text-base lg:text-xl md:text-lg'>
+<ul className='text-gray-500 '>
     <li  className='py-1 flex justify-end'>Name :</li>
     <li  className='py-1 flex justify-end'>catchphrase :</li>
     <li  className='py-1 flex justify-end'>Bs :</li>
   
 </ul>
         </div>
-        <div>
-<ul className='text-gray-700  text-xl'>
+        <div className='text-base lg:text-xl md:text-lg'>
+<ul className='text-gray-700 '>
     <li  className='py-1 flex justify-content-start pl-2'>{object.company.name}</li>
     <li  className='py-1 flex justify-content-start pl-2 '>{object.company.catchPhrase}</li>
     <li  className='py-1 flex justify-content-start pl-2'>{object.company.bs}</li>
@@ -69,8 +69,8 @@ function ProfileDetails({object}) {
     <div className='pb-4'>
         <p className='flex place-content-start ml-4 text-gray-500 py-2  text-xl  ml-0 md:ml-16 lg:ml-36'>Address :</p>
     <div className='flex place-content-center'>
-        <div>
-<ul className='text-gray-500  text-xl'>
+        <div className='text-base lg:text-xl md:text-lg'>
+<ul className='text-gray-500 '>
     <li  className='py-1 flex justify-end'>Street :</li>
     <li  className='py-1 flex justify-end'>Suite :</li>
     <li  className='py-1 flex justify-end'>City :</li>
@@ -78,8 +78,8 @@ function ProfileDetails({object}) {
   
 </ul>
         </div>
-        <div>
-<ul className='text-gray-700  text-xl'>
+        <div className='text-base lg:text-xl md:text-lg'>
+<ul className='text-gray-700  '>
     <li  className='py-1 flex justify-content-start pl-2'>{object.address.street}</li>
     <li  className='py-1 flex justify-content-start pl-2'>{object.address.suite}</li>
     <li  className='py-1 flex justify-content-start pl-2'>{object.address.city}</li>
@@ -90,8 +90,8 @@ function ProfileDetails({object}) {
         </div>
     </div>
         <div className='block'>
-            <img className='address-image rounded-md flex-place-content-start ml-4 lg:ml-24 md:ml-8 sm:ml-4' src='/images/map.jpg'/>
-            <div className='flex text-xs place-content-end text-zinc-400 pt-2'>
+           <div className='flex place-content-center'> <img className='address-image rounded-md ' src='/images/map.jpg'/></div>
+            <div className='flex text-xs  place-content-center lg:place-content-end text-zinc-400 pt-2'>
               Lat:  <p className='mr-2 text-zinc-700 text-sm'>{object.address.geo.lat}</p>
               Long:  <p className='ml-2 text-zinc-700 text-sm'>{object.address.geo.lng}</p>
             </div>

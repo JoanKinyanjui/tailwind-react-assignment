@@ -6,7 +6,7 @@ import "./Chats.css"
 
 function Chats() {
   return (
-    <Accordion className='accordion rounded-t-xl text-white'>
+    <Accordion className='accordion rounded-t-xl'>
     <Accordion.Item eventKey="0" className='border-none  rounded-t-xl'>
       <Accordion.Header className='bg-blue-600 rounded-t-xl  text-white'>
         <div className='text-white'>

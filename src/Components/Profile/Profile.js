@@ -14,43 +14,13 @@ import { TodayOutlined } from '@mui/icons-material';
 import ToDo from '../ToDo/ToDo';
 import { useLocation } from "react-router-dom";
 import { users } from '../users';
+import Tabbig from '../Tabs/Tabbig';
+import TabSmall from '../Tabs/Tabsmall';
 
 
-function TabPanel(props) {
-    const { children, value, index, ...other } = props;
-  
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`vertical-tabpanel-${index}`}
-        aria-labelledby={`vertical-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-  
-  TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-  };
-  
-  function a11yProps(index) {
-    return {
-      id: `vertical-tab-${index}`,
-      'aria-controls': `vertical-tabpanel-${index}`,
-    };
-  }
 
-  export default function Profile(props) {
 
+export default function Profile(props) {
 
 // Find User...
 const location = useLocation();
@@ -60,63 +30,21 @@ const object = users.find(obj => obj.id === id);
 console.log(object.name)
 
 
-
-const [value, setValue] = React.useState(0);
-  
-const handleChange = (event, newValue) => {
-      setValue(newValue);
-    };
-  
     return (
-<div className='relative px-8 flex place-items-center h-screen '>
-<div className="h-screen w-full flex  place-items-center main-profile-div">
-{/* Tabs menu div */}
-       <div className='tabs-menu bg-slate-300 grid place-content-center'>
-       <Tabs
-       className="lowercase w-full"
-          orientation="vertical"
-          value={value}
-          onChange={handleChange}
-          aria-label="Vertical tabs example"
-          TabIndicatorProps={{sx:{display:"none",color:"white",opacity:"1"}}}
 
-          sx={{
-            " & button":{borderRadius:0},
-            " & button:hover":{color:"white"},
-            " & button:active":{color:"white",border:"none"}
-          }}
-        >
-          <Tab label="Profile" {...a11yProps(0)} sx={{borderBottom:"solid 1px #FFFFFF", width:"100%",fontSize:"24px",textTransform:"capitalize",color:"white",opacity:"0.5"}} />
-          <Tab label="Posts" {...a11yProps(1)}  sx={{borderBottom:"solid 1px #FFFFFF", width:"100%",fontSize:"24px",textTransform:"capitalize",color:"white",opacity:"0.5"}}/>
-          <Tab label="Gallery" {...a11yProps(2)}  sx={{borderBottom:"solid 1px #FFFFFF", width:"100%",fontSize:"24px",textTransform:"capitalize",color:"white",opacity:"0.5"}}/>
-          <Tab label="To Do" {...a11yProps(3)}  sx={{borderBottom:"solid 1px #FFFFFF", width:"100%",fontSize:"24px",textTransform:"capitalize",color:"white",opacity:"0.5"}}/>
-        </Tabs>
-       </div >
-{/* Individual tabs */}
-       <div className='individual-tabs '>
-        <TabPanel value={value} index={0}  className="tab-panel-main "  >
-          <ProfileDetails object={object} />
-        </TabPanel>
-        <TabPanel value={value} index={1} className="tab-panel-main  " >
-          <Posts   object={object}/> 
-        </TabPanel>
-        <TabPanel value={value} index={2} className="tab-panel-main " >
-          <Gallery  object={object}/>
-        </TabPanel>
-        <TabPanel value={value} index={3} className="tab-panel-main" >
-          <ToDo  object={object} />
-        </TabPanel>
-        </div>
-        {/*Chats slider  */}
-<div className='chats-main-div grid self-end  py-1  text-slate-100'  >
-  <Chats />
-  <button >Logout Button</button>
-
+<div>
+<div className='relative   place-items-center h-screen '>
+<div className="h-screen w-full block lg:flex  lg:place-items-center place-content-start main-profile-div"> 
+<Tabbig  className="Tabbig h-screen"/>
+<TabSmall className=" Tabsmall " />
 </div>
 
-      </div>
+<div className='chats-main-div grid self-end  py-1  text-slate-100'  >
+  <Chats />
 
 
+</div>
+</div>
 </div>
     );
   }

@@ -4,13 +4,13 @@
 .tabs-menu{
 width: 20%;
 border-radius: 34px;
-height: 90%;
+height: 90vh !important;
 background: transparent linear-gradient(195deg, var(--unnamed-color-2c65c8) 0%, var(--unnamed-color-702cc8) 100%) 0% 0% no-repeat padding-box;
 background: transparent linear-gradient(195deg, #2C65C8 0%, #702CC8 100%) 0% 0% no-repeat padding-box;
 }
 .individual-tabs{
 width: 80% ;
-height: 90%;
+height: 90%!important;
 }
 .tab-panel-main{
     height: 90vh;
@@ -22,10 +22,65 @@ height: 90%;
     right: 4%;
     width: 20% !important;
 }
+.Tabbig{
+    display: grid !important;
+        }
+        .Tabsmall{
+    display: none !important;
+        }
 
-@media only screen and (max-width: 920px){
-    
-    .main-profile-div{
-        display: block;
+
+@media only screen and (max-width: 1024px){
+    .Tabbig{
+display: none !important;
+    }
+    .Tabsmall{
+display: grid !important;
+    }
+.tabs-menu{
+        width: 100vw;
+        border-radius: 0px;
+        height: 10vh !important;
+        background-color: rgb(25, 73, 73);
+        /* background: transparent linear-gradient(195deg, var(--unnamed-color-2c65c8) 0%, var(--unnamed-color-702cc8) 100%) 0% 0% no-repeat padding-box; */
+        /* background: transparent linear-gradient(195deg, #2C65C8 0%, #702CC8 100%) 0% 0% no-repeat padding-box; */
+        }
+ .main-profile-div{
+    display: block
+ }
+ .individual-tabs{
+    height: fit-content;
+    width: 100vw !important;
+ }
+ .chats-main-div{
+    position: absolute;
+    bottom: 0%;
+    right: 4%;
+    width: 35% !important;
+}
+}
+
+@media only screen and (max-width: 768px){
+    .chats-main-div{
+        position: absolute;
+        bottom: 0%;
+        right: 4%;
+        width: 40% !important;
+    }
+}
+@media only screen and (max-width: 468px){
+    .chats-main-div{
+        position: absolute;
+        bottom: 0%;
+        right: 4%;
+        width: 60% !important;
+    }
+}
+@media only screen and (max-width: 320px){
+    .chats-main-div{
+        position: absolute;
+        bottom: 0%;
+        right: 4%;
+        width: 80% !important;
     }
 }
